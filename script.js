@@ -1,38 +1,6 @@
-const menuToggle = document.querySelector('.menu-toggle');
-const navLinks = document.querySelector('.nav-links');
-if (menuToggle) {
-  menuToggle.addEventListener('click', () => navLinks.classList.toggle('active'));
-}
-
-// Modal
-document.querySelectorAll('.project-card').forEach(card => {
-  card.addEventListener('click', () => {
-    const id = card.getAttribute('data-modal');
-    const modal = document.getElementById(id);
-    if (modal) modal.style.display = 'block';
-  });
-});
-
-document.querySelectorAll('.close').forEach(btn => {
-  btn.addEventListener('click', () => btn.closest('.modal').style.display = 'none');
-});
-
-window.addEventListener('click', e => {
-  if (e.target.classList.contains('modal')) e.target.style.display = 'none';
-});
-
-document.addEventListener('keydown', e => {
-  if (e.key === 'Escape') document.querySelectorAll('.modal').forEach(m => m.style.display = 'none');
-});
-
-// Scroll animations
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) entry.target.classList.add('animate-in');
-  });
-}, { threshold: 0.1 });
-
-document.querySelectorAll('.experience-item, .certification-card, .achievement-card, .project-card, .contact-card').forEach(el => {
-  el.classList.add('pre-animate');
-  observer.observe(el);
-});
+const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const menu=document.querySelector('.menu'),header=document.querySelector('.site-header');menu?.addEventListener('click',()=>{const open=header.classList.toggle('open');menu.setAttribute('aria-expanded',open)});document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>header.classList.remove('open')));
+const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}}),{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+const counterObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(!entry.isIntersecting)return;const el=entry.target,target=+el.dataset.count,start=performance.now(),duration=1100;function tick(now){const p=Math.min((now-start)/duration,1);el.textContent=Math.round(target*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(tick)}requestAnimationFrame(tick);counterObserver.unobserve(el)}),{threshold:.7});document.querySelectorAll('[data-count]').forEach(el=>counterObserver.observe(el));
+document.querySelectorAll('.role-tab').forEach(tab=>tab.addEventListener('click',()=>{document.querySelectorAll('.role-tab').forEach(t=>t.classList.remove('active'));document.querySelectorAll('.role-panel').forEach(p=>p.hidden=true);tab.classList.add('active');document.getElementById(tab.dataset.role).hidden=false}));document.getElementById('year').textContent=new Date().getFullYear();
+if(!reduced){const canvas=document.getElementById('signal-canvas'),ctx=canvas.getContext('2d');let points=[],mouse={x:-999,y:-999};function resize(){const d=Math.min(devicePixelRatio,2);canvas.width=innerWidth*d;canvas.height=innerHeight*d;ctx.setTransform(d,0,0,d,0,0);points=Array.from({length:Math.min(46,Math.floor(innerWidth/28))},()=>({x:Math.random()*innerWidth,y:Math.random()*innerHeight,vx:(Math.random()-.5)*.15,vy:(Math.random()-.5)*.15}))}resize();addEventListener('resize',resize);addEventListener('pointermove',e=>mouse={x:e.clientX,y:e.clientY});function draw(){ctx.clearRect(0,0,innerWidth,innerHeight);points.forEach((p,i)=>{p.x+=p.vx;p.y+=p.vy;if(p.x<0||p.x>innerWidth)p.vx*=-1;if(p.y<0||p.y>innerHeight)p.vy*=-1;for(let j=i+1;j<points.length;j++){const q=points[j],d=Math.hypot(p.x-q.x,p.y-q.y);if(d<135){ctx.strokeStyle=`rgba(99,221,255,${(1-d/135)*.22})`;ctx.beginPath();ctx.moveTo(p.x,p.y);ctx.lineTo(q.x,q.y);ctx.stroke()}}const md=Math.hypot(p.x-mouse.x,p.y-mouse.y);if(md<180){ctx.strokeStyle=`rgba(184,255,61,${(1-md/180)*.35})`;ctx.beginPath();ctx.moveTo(p.x,p.y);ctx.lineTo(mouse.x,mouse.y);ctx.stroke()}ctx.fillStyle='#63ddff';ctx.fillRect(p.x,p.y,1.2,1.2)});requestAnimationFrame(draw)}draw();document.querySelectorAll('.magnetic').forEach(el=>{el.addEventListener('pointermove',e=>{const r=el.getBoundingClientRect();el.style.transform=`translate(${(e.clientX-r.left-r.width/2)*.08}px,${(e.clientY-r.top-r.height/2)*.08}px)`});el.addEventListener('pointerleave',()=>el.style.transform='')})}
