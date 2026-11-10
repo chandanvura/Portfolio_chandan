@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#000000">
+  <title>Page Not Found — Sri Chandan Vura</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23181818'/%3E%3Cpath d='M18 20h28v6H24v8h20v6H24v10h-6V20z' fill='%23c4fb91'/%3E%3Ccircle cx='46' cy='18' r='4' fill='%237bd4b4'/%3E%3C/svg%3E">
+  
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/font.css">
+  
+  <style>
+    :root {
+      --bg-base: #000000;
+      --bg-surface: #181818;
+      --text-main: #FFFFFF;
+      --text-muted: #9B9B9B;
+      --border-card: #313131;
+      --accent: #c4fb91;
+      --font-primary: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+      --font-mono: 'Geist Mono', ui-monospace, monospace;
+    }
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: var(--bg-base);
+      color: var(--text-main);
+      font-family: var(--font-primary);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      text-align: center;
+    }
+    .card {
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-card);
+      border-radius: 16px;
+      padding: 48px 32px;
+      max-width: 480px;
+      width: 100%;
+    }
+    .code {
+      font-family: var(--font-mono);
+      font-size: 48px;
+      font-weight: 600;
+      color: var(--accent);
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: 24px;
+      line-height: 32px;
+      margin-bottom: 12px;
+    }
+    p {
+      color: var(--text-muted);
+      font-size: 15px;
+      line-height: 24px;
+      margin-bottom: 32px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 8px 16px;
+      border-radius: 6px;
+      background-color: var(--accent);
+      color: #000000;
+      font-weight: 600;
+      font-size: 14px;
+      text-decoration: none;
+      transition: background-color 300ms ease;
+    }
+    .btn:hover {
+      background-color: #d6ffad;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="code">404</div>
+    <h1>Page not found</h1>
+    <p>The requested page could not be located on this server.</p>
+    <a href="index.html" class="btn">
+      Return to homepage
+    </a>
+  </div>
+</body>
+</html>
