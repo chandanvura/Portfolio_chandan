@@ -4,80 +4,48 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#000000">
-  <meta name="description" content="Sri Chandan Vura — Software and Backend Engineer with 1.5 years of experience, including Sony India Software Centre. Java 21, Spring Boot 3, AWS EKS, and reliable payment systems.">
+  <meta name="description" content="Sri Chandan Vura — Software and Backend Engineer. 1.5 years experience including Sony India Software Centre. Java 21, Spring Boot 3, AWS EKS, PayGuard distributed payment resilience.">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Sri Chandan Vura — Software and Backend Engineer">
-  <meta property="og:description" content="Explore verified backend systems: modernizing 10+ Java microservices at Sony, interactive PayGuard simulation, and Kubernetes deployments.">
+  <meta property="og:title" content="Sri Chandan Vura — Software & Backend Engineer">
+  <meta property="og:description" content="Modernized 10+ Java microservices at Sony. Live interactive PayGuard architecture lab, telemetry, and verified benchmarks.">
   <meta property="og:url" content="https://chandanvura.github.io/Portfolio_chandan/">
   <meta name="color-scheme" content="dark">
   <title>Sri Chandan Vura — Software and Backend Engineer</title>
   
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23181818'/%3E%3Cpath d='M18 20h28v6H24v8h20v6H24v10h-6V20z' fill='%23c4fb91'/%3E%3Ccircle cx='46' cy='18' r='4' fill='%237bd4b4'/%3E%3C/svg%3E">
   
-  <!-- Approved Typefaces: Geist and Geist Mono per B1 -->
+  <!-- Approved Typefaces: Geist & Geist Mono -->
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/font.css">
 
-  <!-- A7 FAQ Schema for Search and AEO Engines -->
+  <!-- A7 Schema for Search and AEO Engines -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "What is your current location and availability?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "I am based in Bangalore, India. I am open to full time software and platform engineering positions in Bangalore, hybrid setups, or remote work arrangements."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What engineering roles match your background?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Software Engineer Java Backend, Platform Engineer, and DevOps or Site Reliability Engineer roles focused on high throughput microservices, cloud deployments, and automated testing."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What was your direct impact at Sony India Software Centre?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "I upgraded 10+ production microservices and 3 shared libraries from Java 8 to Java 21 and Spring Boot 3, tuned JVM garbage collection flags, monitored services on AWS EKS, and modernized Jenkins CI CD pipelines."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can I inspect your code samples directly?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. The PayGuard repository provides clean Java 21 code with Docker and Kubernetes manifests, Flyway schema migrations, and JUnit test suites."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How do you guarantee payment reliability in PayGuard?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "By enforcing exact once processing using SHA 256 request hashing, Redis distributed locks, PostgreSQL unique constraints, and background reconciliation workers."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What is the fastest way to get in touch?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Send an email to srichandanvura@gmail.com, reach out on LinkedIn, or call +91 8328014070 for immediate recruiter conversations."
-        }
-      }
-    ]
+    "@type": "Person",
+    "name": "Sri Chandan Vura",
+    "jobTitle": "Software Engineer",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Sony India Software Centre"
+    },
+    "email": "mailto:srichandanvura@gmail.com",
+    "telephone": "+918328014070",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bangalore",
+      "addressCountry": "India"
+    },
+    "sameAs": [
+      "https://github.com/chandanvura",
+      "https://linkedin.com/in/chandanvura"
+    ],
+    "knowsAbout": ["Java 21", "Spring Boot 3", "AWS EKS", "Microservices", "PostgreSQL", "Kubernetes", "Distributed Systems"]
   }
   </script>
   
   <style>
-    /* 2026 Visual System Tokens (Strictly B1, B2, B3, B4, B5, B7) */
+    /* 2026 Strict Dark Mode Design System Tokens (B1, B2, B3, B4, B5, B7) */
     :root {
       --bg-base: #000000;
       --bg-surface: #181818;
@@ -95,6 +63,7 @@
       --accent: #c4fb91;
       --accent-hover: #d6ffad;
       --accent-secondary: #7bd4b4;
+      --accent-glow: rgba(196, 251, 145, 0.15);
       
       --font-primary: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
       --font-mono: 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
@@ -118,7 +87,7 @@
       --spacing-800: 80px;
       --spacing-900: 96px;
 
-      /* B3 Corner Radius Tokens */
+      /* B3 Corner Radius */
       --radius-sm: 4px;
       --radius-md: 6px;
       --radius-lg: 8px;
@@ -151,7 +120,7 @@
       font-size: 16px;
     }
 
-    /* Copy Rules: B1 balanced headings and pretty body with zero orphaned words */
+    /* Copy Rules: B1 balanced headings and pretty body without hyphens */
     h1, h2, h3, h4, h5, h6 {
       text-wrap: balance;
     }
@@ -282,7 +251,7 @@
       top: 16px;
     }
 
-    /* B7 Navigation: Compact floating bar off top edge */
+    /* B7 Navigation: Compact floating bar */
     .site-nav-wrapper {
       position: sticky;
       top: var(--spacing-200);
@@ -307,7 +276,7 @@
       border-radius: var(--radius-full);
       padding: var(--spacing-75) var(--spacing-200);
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
-      max-width: 980px;
+      max-width: 1020px;
       width: 100%;
     }
 
@@ -335,7 +304,7 @@
       align-items: center;
       gap: var(--spacing-300);
     }
-    @media (min-width: 768px) {
+    @media (min-width: 820px) {
       .nav-links {
         display: flex;
       }
@@ -367,7 +336,7 @@
       color: var(--text-muted);
       cursor: pointer;
     }
-    @media (min-width: 1024px) {
+    @media (min-width: 1040px) {
       .kbd-pill {
         display: flex;
       }
@@ -384,7 +353,7 @@
       background: var(--bg-surface);
       border: 1px solid var(--border-card);
     }
-    @media (min-width: 768px) {
+    @media (min-width: 820px) {
       .menu-toggle-btn {
         display: none;
       }
@@ -426,7 +395,7 @@
       border-bottom: 1px solid var(--border-subtle);
     }
 
-    /* Hero Section with Live System Playground */
+    /* Hero Section */
     .hero-section {
       padding-top: var(--spacing-600);
       padding-bottom: var(--spacing-700);
@@ -643,6 +612,52 @@
       color: var(--text-muted);
     }
 
+    /* NEW SECTION: Recruiter Lens & Role Switcher (Strategic Persona Hook) */
+    .lens-section {
+      padding-top: var(--spacing-700);
+      padding-bottom: var(--spacing-500);
+    }
+    .lens-switcher {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--spacing-100);
+      margin-bottom: var(--spacing-400);
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-card);
+      padding: var(--spacing-75);
+      border-radius: var(--radius-xl);
+      width: fit-content;
+    }
+    .lens-tab {
+      padding: var(--spacing-75) var(--spacing-200);
+      font-size: 13px;
+      font-family: var(--font-mono);
+      font-weight: 500;
+      border-radius: var(--radius-lg);
+      color: var(--text-muted);
+      transition: background-color var(--duration-hover) var(--ease-base), color var(--duration-hover) var(--ease-base);
+    }
+    .lens-tab.active {
+      background-color: var(--bg-highlight);
+      color: var(--accent);
+      font-weight: 600;
+    }
+    .lens-card {
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-card);
+      border-radius: var(--radius-2xl);
+      padding: var(--spacing-400);
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--spacing-300);
+    }
+    @media (min-width: 860px) {
+      .lens-card {
+        grid-template-columns: 1.2fr 0.8fr;
+        align-items: center;
+      }
+    }
+
     /* B11 Mandatory Tagline Reveal Section */
     .tagline-section {
       padding-top: var(--spacing-800);
@@ -790,6 +805,33 @@
     .flow-step-state {
       color: var(--accent);
       font-weight: 600;
+    }
+
+    /* Architecture Benchmark Callout Grid */
+    .benchmark-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: var(--spacing-200);
+      margin-top: var(--spacing-300);
+    }
+    .benchmark-card {
+      background-color: var(--bg-elevated);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: var(--spacing-200);
+      display: flex;
+      flex-direction: column;
+      gap: var(--spacing-50);
+    }
+    .benchmark-metric {
+      font-family: var(--font-mono);
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--accent);
+    }
+    .benchmark-label {
+      font-size: 13px;
+      color: var(--text-muted);
     }
 
     /* Experience Timeline Section */
@@ -1003,6 +1045,7 @@
         <span class="nav-brand-title">Sri Chandan Vura</span>
       </div>
       <div class="nav-links">
+        <a href="#lens" class="nav-link">Focus</a>
         <a href="#work" class="nav-link">Work</a>
         <a href="#experience" class="nav-link">Experience</a>
         <a href="#skills" class="nav-link">Skills</a>
@@ -1014,12 +1057,10 @@
           <span>⌘K</span>
         </div>
         <a href="data:application/pdf;base64,JVBERi0xLjQKJZOMi54gUmVwb3J0TGFiIEdlbmVyYXRlZCBQREYgZG9jdW1lbnQgKG9wZW5zb3VyY2UpCjEgMCBvYmoKPDwKL0YxIDIgMCBSIC9GMiAzIDAgUiAvRjMgNyAwIFIKPj4KZW5kb2JqCjIgMCBvYmoKPDwKL0Jhc2VGb250IC9IZWx2ZXRpY2EgL0VuY29kaW5nIC9XaW5BbnNpRW5jb2RpbmcgL05hbWUgL0YxIC9TdWJ0eXBlIC9UeXBlMSAvVHlwZSAvRm9udAo+PgplbmRvYmoKMyAwIG9iago8PAovQmFzZUZvbnQgL0hlbHZldGljYS1Cb2xkIC9FbmNvZGluZyAvV2luQW5zaUVuY29kaW5nIC9OYW1lIC9GMiAvU3VidHlwZSAvVHlwZTEgL1R5cGUgL0ZvbnQKPj4KZW5kb2JqCjQgMCBvYmoKPDwKL0EgPDwKL1MgL1VSSSAvVHlwZSAvQWN0aW9uIC9VUkkgKG1haWx0bzpzcmljaGFuZGFudnVyYUBnbWFpbC5jb20pCj4+IC9Cb3JkZXIgWyAwIDAgMCBdIC9SZWN0IFsgMjIzLjI2OTMgNzM3LjY0IDMyMC4wNDM5IDc0NyBdIC9TdWJ0eXBlIC9MaW5rIC9UeXBlIC9Bbm5vdAo+PgplbmRvYmoKNSAwIG9iago8PAovQSA8PAovUyAvVVJJIC9UeXBlIC9BY3Rpb24gL1VSSSAoaHR0cHM6Ly9saW5rZWRpbi5jb20vaW4vY2hhbmRhbnZ1cmEpCj4+IC9Cb3JkZXIgWyAwIDAgMCBdIC9SZWN0IFsgMzMxLjQ0NzUgNzM3LjY0IDQzMC4yODkxIDc0NyBdIC9TdWJ0eXBlIC9MaW5rIC9UeXBlIC9Bbm5vdAo+PgplbmRvYmoKNiAwIG9iago8PAovQSA8PAovUyAvVVJJIC9UeXBlIC9BY3Rpb24gL1VSSSAoaHR0cHM6Ly9naXRodWIuY29tL2NoYW5kYW52dXJhKQo+PiAvQm9yZGVyIFsgMCAwIDAgXSAvUmVjdCBbIDQ0MS42OTI3IDczNy42NCA1MjcuMTAyNyA3NDcgXSAvU3VidHlwZSAvTGluayAvVHlwZSAvQW5ub3QKPj4KZW5kb2JqCjcgMCBvYmoKPDwKL0Jhc2VGb250IC9IZWx2ZXRpY2EtT2JsaXF1ZSAvRW5jb2RpbmcgL1dpbkFuc2lFbmNvZGluZyAvTmFtZSAvRjMgL1N1YnR5cGUgL1R5cGUxIC9UeXBlIC9Gb250Cj4+CmVuZG9iago4IDAgb2JqCjw8Ci9BIDw8Ci9TIC9VUkkgL1R5cGUgL0FjdGlvbiAvVVJJIChodHRwczovL2dpdGh1Yi5jb20vY2hhbmRhbnZ1cmEvUGF5R3VhcmQpCj4+IC9Cb3JkZXIgWyAwIDAgMCBdIC9SZWN0IFsgMzA1LjQyMDggMzUyLjk2IDQ0My45NDM0IDM2Mi44IF0gL1N1YnR5cGUgL0xpbmsgL1R5cGUgL0Fubm90Cj4+CmVuZG9iago5IDAgb2JqCjw8Ci9BIDw8Ci9TIC9VUkkgL1R5cGUgL0FjdGlvbiAvVVJJIChodHRwczovL2NoYW5kYW52dXJhLmdpdGh1Yi5pby9QYXlHdWFyZC8pCj4+IC9Cb3JkZXIgWyAwIDAgMCBdIC9SZWN0IFsgNDUwLjc5ODYgMzUyLjk2IDQ5Mi4yNjYgMzYyLjggXSAvU3VidHlwZSAvTGluayAvVHlwZSAvQW5ub3QKPj4KZW5kb2JqCjEwIDAgb2JqCjw8Ci9Bbm5vdHMgWyA0IDAgUiA1IDAgUiA2IDAgUiA4IDAgUiA5IDAgUiBdIC9Db250ZW50cyAxNCAwIFIgL01lZGlhQm94IFsgMCAwIDYxMiA3OTIgXSAvUGFyZW50IDEzIDAgUiAvUmVzb3VyY2VzIDw8Ci9Gb250IDEgMCBSIC9Qcm9jU2V0IFsgL1BERiAvVGV4dCAvSW1hZ2VCIC9JbWFnZUMgL0ltYWdlSSBdCj4+IC9Sb3RhdGUgMCAKICAvVHJhbnMgPDwKCj4+IC9UeXBlIC9QYWdlCj4+CmVuZG9iagoxMSAwIG9iago8PAovUGFnZU1vZGUgL1VzZU5vbmUgL1BhZ2VzIDEzIDAgUiAvVHlwZSAvQ2F0YWxvZwo+PgplbmRvYmoKMTIgMCBvYmoKPDwKL0F1dGhvciAoXChhbm9ueW1vdXNcKSkgL0NyZWF0aW9uRGF0ZSAoRDoyMDI2MTExMTAxMjA1MyswNScwMCcpIC9DcmVhdG9yIChcKHVuc3BlY2lmaWVkXCkpIC9LZXl3b3JkcyAoKSAvTW9kRGF0ZSAoRDoyMDI2MTExMTAxMjA1MyswNScwMCcpIC9Qcm9kdWNlciAoUmVwb3J0TGFiIFBERiBMaWJyYXJ5IC0gXChvcGVuc291cmNlXCkpIAogIC9TdWJqZWN0IChcKHVuc3BlY2lmaWVkXCkpIC9UaXRsZSAoXChhbm9ueW1vdXNcKSkgL1RyYXBwZWQgL0ZhbHNlCj4+CmVuZG9iagoxMyAwIG9iago8PAovQ291bnQgMSAvS2lkcyBbIDEwIDAgUiBdIC9UeXBlIC9QYWdlcwo+PgplbmRvYmoKMTQgMCBvYmoKPDwKL0ZpbHRlciBbIC9BU0NJSTg1RGVjb2RlIC9GbGF0ZURlY29kZSBdIC9MZW5ndGggNDAyNgo+PgpzdHJlYW0KR2IhU25nTk06QyZxLyktZUMuUkclKXJQcjAkMjpFTiszaTdMYG5jN0NcYWZoKUdpITczXEFHYFpoIVhtWCokLzpNVSJmUVBEO2BcMSpIRW9dNkA/RFdsQ2JLcmBlTmddLTA1LGUnWS1gPGgmNUVaOSQ1P2JxRWBtSiteaTQuclQuMldSaSNcMHFMNyw6Oz5dUzpwVyNtPWJBPWFYX3QmZ2xCNUplX0VfLV4yRmNHL2dicjtxKTdSWV0+KF86UWw4ZVdjbWE4bDtBalc5IWlSUSc+TUVaSSQpODwhREI6QWpRJVxHU3E4ajsyNWhKLkFMUmYwLi0wM2RKY0tmJSVQUzlENSdraDRYVjxmOiVzPHFpJjI/NjdmV2dKMkQuX1EuUFFfJnRjdSg/JWpnOSQ3RTU2SS1IOUFyUiYpPGouaycsUHBUPVU7I0lPXCNgPypmO2BSbz9DUyZ0WU1aVWFrdV4oazdhNThTQUltTCxSVFRJVD4oaUlRbW8oaDtbRnRtTkJZJXJCRmZccCclbyFjNWlMVFc9TzlcI0Bfa1djKj9bVCNBVDwtTHFSOyUtaGhXJCFcOzdYYFU7bjlxbGUmZSRBY2lfIUNKKDxscFxsXTFwcW1PcnBKPTdVWm1GWk9QbVQhcUhAZVZzNF1FVTNuUiZBYWk4LFFcMiVoLGl0LUldZydrNScwXlJuXiZoTCkyXURHXjI8XnEra0Y5USRxSj5lWzRtbVgnamhTZFY8czM9XEkkTXB1UiohbEpCWTAsOG1aXjplRkZtNWI+blxWJFU5WUQoQz0jOE0pQz5DKzgycT0ub21qSVlqbG9BYSJhI0ljcHRiQlgmYHI5JTBBIjY4Sz9vRjUic2kxM2pGN2RSXSohPzY1P0ZiRjJBOFE/NGJJImlYQnNxbFlsbCtrSm9EMVMmWHFvKy1OTWxxZUNQQT8jNEAlJ1UvaTZlbkoxRllFUFlyZl03U1gmVjEoO1FFTU1FaDx1MF1rXmlqNmQ2aCJaUUNdX09QUVM7JG1IKyItWTo2Pm5NTW1yNU9fP0Y6SV1vaERRbXI3cigsZkk/dGMqY0BDSClTS3U7ZVwxayVaKVFxbEYiVHJIXFk5ODMqL04uPW9FP2l1LlVWNDReTll1alZVNm9NUUAkLitXKkc6ZCk4XHBpUnEiQltUdTheSlBpLF5CJHFMXSlablJXaitMRWw9VERxMFk6Y106K1xHajZuPzMoVUk8MlxmR2FzX0JuZmgzSVEyTkg3KyhALV8tJ1pOOEwjNUcjI2g9YGVyTic0cm5XcjM8REthP1QyWmxpO3NPZi5TYSNKaVdERTdETmhJOClnIVhqRmJBaTI4QnRLLTdnVjZIK1BETlJAaVhbMDlkdStmRGAjdTNnLyNNWzw2R1dccCknQk40OyFGQ29CRUpGUVZXWGFtVS1MOCk6LkclUzUvJkpTVitAa2dScD9QK2EjMUdJIVpjSipzPFdqTUwtNWxnPXBVVGBRcV5NJDw1MUE6O1doQ0VNQ3AjPWouLT9wOnFaYW5gVTAoX3NHTTdaOWIrWyxNcDBLIm1DJlxoUFkxSTlJLmlPOTxBQnAnM0haODlzJDpdIihDZk1la0Qpbi1hO2AkaEhyY1FJKjxMJiRXIlolJkFoQWMwUHBxMSFPQSFKWXUwdWZqPUZUYGN0LF51ZWpJLEsxY2Q/dT9pb3EnQ1IrIVwqXGJkcyJhdS83RXU/QExZaSJZal82YWdfXD9CRklGbEdUPklSNE1NS0ZSR2JlX2lEMW9FVDE/aE4hPWxmLyU3JSdbQnEiKFQyJ09wLjBrMjVvOGgzY2ApZ1VHcicpV2wlNzdNai8udXNAXnBhZ0xmVEpdS2NkMSEpUHJvRV82S2tALEFfNV9FUUs2SVpmY01cSVRhLzZDNl4kWFIhS1ZMSFRKbS9OMz5fMjNbOjFdM1ZDa0djaD4qIlw4Q0xpTk8zVi1cT2EnWj9FQ0pNPkJWW1NzIl9CTiRQRHA6LU47VyJXYUVvO11pRl9cN15mWDdmcT1TTyUlN2BkUUBpYWtFYHRMRVZgIVtOcl9nJyQ6M0JiKG4jdTRiUmJGbVA2YXVIK1wrbklUO1EsZDVAQWFvUDYiNXRnaFU2Ky1sOVE+bCREQE9YPTNIZTI5PXNRdXIhLldFYlNEOkQxTj5MdDE5MFtURl9fSTEwOnFfSmYuUGJ1J1orTUNZSSJsVV04Ji5XWkQ0K2Q6Vj4yZVA8Q3FGX1NpPHJORXUwKW4vIzdGXiUsNik8ZzFodS8zcis9Ql8oNz07MjpkX1NeN1g1VSJJRkcmb0w6IWghVGY4YEoicCxyZDhgOE5CRy5SXDVqSi1TUjZwNzwsMTkuIT5TO3I+LlNvdCJoPFQ+Ol87cHJEInUzPkI2LHRPVVwnazw1X2o+Tz1TRkgkYFVmRiokMG8/I2ZeSHJXL0w+K2VtY1UycEJkTkJRPikkOHMiPlxgMDg4KUgwK1pobV9eVm8lKXM1YiMpWEZiKVgoLUwwYColY1ArRUc1MnAuLC9xOkgiUXNvYmVtSHBObHU+I2lQV3RjPjZHWEtOWjxIPz84VGQvKkk4Y1cmU1tzdCMydGYhJGhqW3JaPSIzQSFkSUY/UD1IX0QsUyouWWJJNlcsI0c/KjBNSHRlc01cW2UnYyZaIS0qXnM2Nl5HPGE5Zl5KdCtxX1NTVCg1a0ZBO1JdS3QhS0wrclJsc3M3SUlcY1xbbFA4WGoySyxmQ20oQzxeKykpI2s6Z0tDJlVWJlIjcXUjU2Y/IW10XFxgOz9SPl1DIUczS3IqM1s6RW9PVEQ6VVVpYzBOQioxKSxPU0ZTTTMkSTNsMWhKV2BGOScqS2NxRVlQOSNHbC4kJiJqTFFAOFFKNHMzXzYhNCJUY1BgXmFKS3NgbWFxRydLQ0gjXT8tJ2ZgLjYtQzwjUiNhMDw2ZiE+Yyg1WjY8cTtzaXN0QUpnYkhTbzcxPGpiNSU8JG1aZW9dRjRjND8hcF9gQjVnWUtpXlNDImJVQ1BeR24kIlhdSGVgJClaKCo3bDdxXnFDVS83R10yZGtdYFNuSVxbMz5lal5YNSxyMGdvaSZqIW0iYyJfWDpvZ14udF1mZl5hcWVnYXQtQmYlcSEmWVRmbDJWYC80KzUnL0ElZTh0RCw7Pl1YWCRtcFM6XihpWnBjLlYoTmBfcGcvODpPSlw5XF0sa0FNKUwrJldbdGwlWFotOzYqdG1WdShNP2xpc15KT2RRKThcaChWXzlUNU8/K2IvY1ZNNloqPW5uWmpsMmBPcXRpQGBxU2ZgVSo4QUp0XSxFSXJaMys7X1xlVipGSi1bMCUwMkRHWzFTRy4wTyNBXz1hL0lzTFNOOExsMzlEIUZQW2AmO20kaEYsTi0iaUVBW2kqcjFBSiMpIiM/OUJ1X2g4R1VJJGNFZyVxQFI3Zz1kMTY5PjVPbjlgJG5QI3JHWzw0QTRYRT0tb2smSTRuX29jQUcoQz9DY14rTjdRdWd0J25EaWMpcD0hbj5jISJ1N2x1REMydDRCKyg1T1EwbiNGVjpAWSJ1QmRrYipsOixSKkcyZGFqQ1xQTTwwJU4qT1NvO1BsQ0clQ2RlVCkxaF9aaCx1S2U2NSJuOWpHND1ycDVhJEhzY0NPNVNQcnI4cnAjPCo0TjJTJDRMaHVdVkIhXUdwdWhOJzEtMFEiPTcrUDYwOFMjWi9rdWwiOk82OWBmKE0hVE8+NTdeKENVQmQoakRVT1puX1BOc2hOSjNCP0pNVTxzU14yZWM2R1YoOj1ZNTQjJVhwOGhSR2Z0SUJnTGMwPCcqbi5fLm9MQDNoQFxHUUYsV0phWkBQaD9jN0wsNi4jODF1KWgoP3BVJk4xc1kway8zSjI/TU9ncXNqZGNIQFE6X2tGYT80LUkqcUdwLlhRZDxMXVsvXVFLTnQ2S2wpIjxyZWVsb19VJFRPLl8pcWlkIVxbXWUmXzpIWDtJIihUTiY9ODstam47WmYkJU82M2hyQV9VcCM9MWl1KVNlX00vMmciJmNNZDcwRjEhTTZGY209LUkjKG5iQ0d1RStoQmktPlNxUCtqODgmYWd0cy1kTnVQclVJYTxbUzByW0ZmV2duZD08RWRDaUYhbS0nJSsuR3U+WkNSVDZmSVQnYl1OVyQwVUBnL0kqP0B0RCkrJzJOYS8qX2hyUUYqXEYoOTAxRVE9W2chNjlENlhtQVghX1xNVExWZnBHRyY6bz5MJ24tPFNLSWNNO1JZKXBrMzxqZWVvT3VdI2srdDZVYkI+X1dxZGspPE8mZUNmcyJVRigvJUFgKFBjbzFzOUVOL3UxQUAxSjdtVnRuWEtlVEc7P0FKXWI4YT83R2JAcy9UIVZtXF9KTDpcXklAXGsmNVltOCYiZTQzMkVsLEE6b3A1P3RkSiJubk9WSFFlNzAzNzBwJj03UXBGQVJSbFxDNmRqXUNhTmRFTnBHOTEvalNebWUwPTpKWiVPcVJLKEc0QydJWzd1PiFDLlY1TXFpaTo8dDBPPmJTSlIoQDVTSTJZKjpOKFdgOVAuNVJfVlheKS8kPDtlKi1RRDJgKUhgJVxBaE8iR2E9b15FJE5IR0hQTClAYysnNHUvOSs7WmpQN0wlQl5iJmovTDQlQzpLOCwiLj9BNnFGPGcmSGQnb01ucWs4ZV8mSm08VTlxJjtGZ1cqV3IqV2RcT2A6WU8lXT9TL0Y1azRCUVxgUDRiYSljIjwqY2UvKEQ5PmdoXEgmTD5NKCJoSnFkUlRRUmJLR10wW1lUK2knTltDMTVgMShsR184cmIpO1UhKzlpSCdSM0lcKF86VCJtMCRnI2JLMGBaNzcjRVNWWzBqUTIiJD04NUhoUTVJMlc5QFM4KSVgOEorUnFWXT80VzJubzZMVjpUZ205YzBBOWNDamJzbG4vPEtLbysqVDlMNSQmcmguP3VjI1YlUT9NKkgoKzAvR2tmLCtdTENxVDMkdT0pXl4uIUlZQiksOGxcXkswQlQ7R3NaI2Voa2N0OFJNPUhNczU9PmUpZDQsJD5eKi4oXU40LCkvX1lDSktuIWRgREVHZ25jWThSNFhlYWpgOFA5O2BuXWNIJTNsdVYsIXU5cldfb15IaWw8VU5baG1hNnM1KiFxPzE6cWUtO29MY1hJXllpc24pQUckM1cxbWFkSXBcKksqVS5OPCMoWkBtYVc9P24hLjEoPTgqUD09S05BOD5YcFE+WCg+SEI2MGskKHMoKTBXOEVhTThebEk9aWJDXFYxSXQuVGVdQCgvcGlAJnIvYzpcbWpqJzMhRydLI2dWbGNLVVhqJUM7LShdNTUzcjNnJj87NllidWonTjFpR2NcbU9sVEpKOmVjLFZOR3JhIn4+ZW5kc3RyZWFtCmVuZG9iagp4cmVmCjAgMTUKMDAwMDAwMDAwMCA2NTUzNSBmIAowMDAwMDAwMDYxIDAwMDAwIG4gCjAwMDAwMDAxMTIgMDAwMDAgbiAKMDAwMDAwMDIxOSAwMDAwMCBuIAowMDAwMDAwMzMxIDAwMDAwIG4gCjAwMDAwMDA1MDcgMDAwMDAgbiAKMDAwMDAwMDY4NyAwMDAwMCBuIAowMDAwMDAwODYyIDAwMDAwIG4gCjAwMDAwMDA5NzcgMDAwMDAgbiAKMDAwMDAwMTE2MyAwMDAwMCBuIAowMDAwMDAxMzQ4IDAwMDAwIG4gCjAwMDAwMDE1ODYgMDAwMDAgbiAKMDAwMDAwMTY1NiAwMDAwMCBuIAowMDAwMDAxOTM3IDAwMDAwIG4gCjAwMDAwMDE5OTggMDAwMDAgbiAKdHJhaWxlcgo8PAovSUQgCls8ZjdhMTg4MjI4MmM0MTM1MDgzZGZmYzNkNzEzZDA0M2Y+PGY3YTE4ODIyODJjNDEzNTA4M2RmZmMzZDcxM2QwNDNmPl0KJSBSZXBvcnRMYWIgZ2VuZXJhdGVkIFBERiBkb2N1bWVudCAtLSBkaWdlc3QgKG9wZW5zb3VyY2UpCgovSW5mbyAxMiAwIFIKL1Jvb3QgMTEgMCBSCi9TaXplIDE1Cj4+CnN0YXJ0eHJlZgo2MTE2CiUlRU9GCg==" download="Sri_Chandan_Vura_Resume.pdf" class="btn btn-primary button-xsm">
-          <!-- Phosphor Icon: FileArrowDown -->
           <svg width="15" height="15" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M213.66,82.34l-56-56A8,8,0,0,0,152,24H56A16,16,0,0,0,40,40V216a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V88A8,8,0,0,0,213.66,82.34ZM152,44l44,44H152ZM200,216H56V40h80V96a8,8,0,0,0,8,8h56V216Zm-42.34-66.34a8,8,0,0,1,0,11.31l-24,24a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.31L120,160.69V128a8,8,0,0,1,16,0v32.69l10.34-10.34A8,8,0,0,1,157.66,149.66Z"></path></svg>
           Get ATS resume
         </a>
         <button type="button" class="menu-toggle-btn" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
-          <!-- Phosphor Icon: List -->
           <svg width="20" height="20" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"></path></svg>
         </button>
       </div>
@@ -1029,6 +1070,7 @@
   <!-- Mobile Menu Panel per B7 -->
   <div class="mobile-menu-overlay" id="mobileMenu" aria-hidden="true">
     <ul class="mobile-menu-list">
+      <li><a href="#lens" class="mobile-menu-item">Hiring Lens</a></li>
       <li><a href="#work" class="mobile-menu-item">Selected Work</a></li>
       <li><a href="#experience" class="mobile-menu-item">Engineering Experience</a></li>
       <li><a href="#skills" class="mobile-menu-item">Technical Skills</a></li>
@@ -1042,7 +1084,7 @@
     </ul>
   </div>
 
-  <!-- Command Palette Modal (2026 Interaction Polish) -->
+  <!-- Command Palette Modal (Ctrl + K) -->
   <div class="palette-backdrop" id="paletteBackdrop" role="dialog" aria-modal="true" aria-label="Command Palette">
     <div class="palette-card">
       <div class="palette-input-wrapper">
@@ -1058,6 +1100,10 @@
         <li class="palette-item" data-action="email">
           <span>Copy Direct Email Address</span>
           <span class="caption-4">Clipboard</span>
+        </li>
+        <li class="palette-item" data-action="linkedin">
+          <span>Open LinkedIn Profile</span>
+          <span class="caption-4">External</span>
         </li>
         <li class="palette-item" data-action="work">
           <span>Jump to Featured Projects</span>
@@ -1096,25 +1142,21 @@
             Backend and DevOps engineer with 1.5 years of verifiable experience, including modernizing 10+ core microservices from Java 8 to Java 21 at Sony India Software Centre
           </p>
 
-          <!-- A4 Single Primary CTA plus Email Action -->
+          <!-- A4 Primary CTA + Direct Contact Actions -->
           <div class="hero-cta-group">
             <a href="data:application/pdf;base64,JVBERi0xLjQKJZOMi54gUmVwb3J0TGFiIEdlbmVyYXRlZCBQREYgZG9jdW1lbnQgKG9wZW5zb3VyY2UpCjEgMCBvYmoKPDwKL0YxIDIgMCBSIC9GMiAzIDAgUiAvRjMgNyAwIFIKPj4KZW5kb2JqCjIgMCBvYmoKPDwKL0Jhc2VGb250IC9IZWx2ZXRpY2EgL0VuY29kaW5nIC9XaW5BbnNpRW5jb2RpbmcgL05hbWUgL0YxIC9TdWJ0eXBlIC9UeXBlMSAvVHlwZSAvRm9udAo+PgplbmRvYmoKMyAwIG9iago8PAovQmFzZUZvbnQgL0hlbHZldGljYS1Cb2xkIC9FbmNvZGluZyAvV2luQW5zaUVuY29kaW5nIC9OYW1lIC9GMiAvU3VidHlwZSAvVHlwZTEgL1R5cGUgL0ZvbnQKPj4KZW5kb2JqCjQgMCBvYmoKPDwKL0EgPDwKL1MgL1VSSSAvVHlwZSAvQWN0aW9uIC9VUkkgKG1haWx0bzpzcmljaGFuZGFudnVyYUBnbWFpbC5jb20pCj4+IC9Cb3JkZXIgWyAwIDAgMCBdIC9SZWN0IFsgMjIzLjI2OTMgNzM3LjY0IDMyMC4wNDM5IDc0NyBdIC9TdWJ0eXBlIC9MaW5rIC9UeXBlIC9Bbm5vdAo+PgplbmRvYmoKNSAwIG9iago8PAovQSA8PAovUyAvVVJJIC9UeXBlIC9BY3Rpb24gL1VSSSAoaHR0cHM6Ly9saW5rZWRpbi5jb20vaW4vY2hhbmRhbnZ1cmEpCj4+IC9Cb3JkZXIgWyAwIDAgMCBdIC9SZWN0IFsgMzMxLjQ0NzUgNzM3LjY0IDQzMC4yODkxIDc0NyBdIC9TdWJ0eXBlIC9MaW5rIC9UeXBlIC9Bbm5vdAo+PgplbmRvYmoKNiAwIG9iago8PAovQSA8PAovUyAvVVJJIC9UeXBlIC9BY3Rpb24gL1VSSSAoaHR0cHM6Ly9naXRodWIuY29tL2NoYW5kYW52dXJhKQo+PiAvQm9yZGVyIFsgMCAwIDAgXSAvUmVjdCBbIDQ0MS42OTI3IDczNy42NCA1MjcuMTAyNyA3NDcgXSAvU3VidHlwZSAvTGluayAvVHlwZSAvQW5ub3QKPj4KZW5kb2JqCjcgMCBvYmoKPDwKL0Jhc2VGb250IC9IZWx2ZXRpY2EtT2JsaXF1ZSAvRW5jb2RpbmcgL1dpbkFuc2lFbmNvZGluZyAvTmFtZSAvRjMgL1N1YnR5cGUgL1R5cGUxIC9UeXBlIC9Gb250Cj4+CmVuZG9iago4IDAgb2JqCjw8Ci9BIDw8Ci9TIC9VUkkgL1R5cGUgL0FjdGlvbiAvVVJJIChodHRwczovL2dpdGh1Yi5jb20vY2hhbmRhbnZ1cmEvUGF5R3VhcmQpCj4+IC9Cb3JkZXIgWyAwIDAgMCBdIC9SZWN0IFsgMzA1LjQyMDggMzUyLjk2IDQ0My45NDM0IDM2Mi44IF0gL1N1YnR5cGUgL0xpbmsgL1R5cGUgL0Fubm90Cj4+CmVuZG9iago5IDAgb2JqCjw8Ci9BIDw8Ci9TIC9VUkkgL1R5cGUgL0FjdGlvbiAvVVJJIChodHRwczovL2NoYW5kYW52dXJhLmdpdGh1Yi5pby9QYXlHdWFyZC8pCj4+IC9Cb3JkZXIgWyAwIDAgMCBdIC9SZWN0IFsgNDUwLjc5ODYgMzUyLjk2IDQ5Mi4yNjYgMzYyLjggXSAvU3VidHlwZSAvTGluayAvVHlwZSAvQW5ub3QKPj4KZW5kb2JqCjEwIDAgb2JqCjw8Ci9Bbm5vdHMgWyA0IDAgUiA1IDAgUiA2IDAgUiA4IDAgUiA5IDAgUiBdIC9Db250ZW50cyAxNCAwIFIgL01lZGlhQm94IFsgMCAwIDYxMiA3OTIgXSAvUGFyZW50IDEzIDAgUiAvUmVzb3VyY2VzIDw8Ci9Gb250IDEgMCBSIC9Qcm9jU2V0IFsgL1BERiAvVGV4dCAvSW1hZ2VCIC9JbWFnZUMgL0ltYWdlSSBdCj4+IC9Sb3RhdGUgMCAKICAvVHJhbnMgPDwKCj4+IC9UeXBlIC9QYWdlCj4+CmVuZG9iagoxMSAwIG9iago8PAovUGFnZU1vZGUgL1VzZU5vbmUgL1BhZ2VzIDEzIDAgUiAvVHlwZSAvQ2F0YWxvZwo+PgplbmRvYmoKMTIgMCBvYmoKPDwKL0F1dGhvciAoXChhbm9ueW1vdXNcKSkgL0NyZWF0aW9uRGF0ZSAoRDoyMDI2MTExMTAxMjA1MyswNScwMCcpIC9DcmVhdG9yIChcKHVuc3BlY2lmaWVkXCkpIC9LZXl3b3JkcyAoKSAvTW9kRGF0ZSAoRDoyMDI2MTExMTAxMjA1MyswNScwMCcpIC9Qcm9kdWNlciAoUmVwb3J0TGFiIFBERiBMaWJyYXJ5IC0gXChvcGVuc291cmNlXCkpIAogIC9TdWJqZWN0IChcKHVuc3BlY2lmaWVkXCkpIC9UaXRsZSAoXChhbm9ueW1vdXNcKSkgL1RyYXBwZWQgL0ZhbHNlCj4+CmVuZG9iagoxMyAwIG9iago8PAovQ291bnQgMSAvS2lkcyBbIDEwIDAgUiBdIC9UeXBlIC9QYWdlcwo+PgplbmRvYmoKMTQgMCBvYmoKPDwKL0ZpbHRlciBbIC9BU0NJSTg1RGVjb2RlIC9GbGF0ZURlY29kZSBdIC9MZW5ndGggNDAyNgo+PgpzdHJlYW0KR2IhU25nTk06QyZxLyktZUMuUkclKXJQcjAkMjpFTiszaTdMYG5jN0NcYWZoKUdpITczXEFHYFpoIVhtWCokLzpNVSJmUVBEO2BcMSpIRW9dNkA/RFdsQ2JLcmBlTmddLTA1LGUnWS1gPGgmNUVaOSQ1P2JxRWBtSiteaTQuclQuMldSaSNcMHFMNyw6Oz5dUzpwVyNtPWJBPWFYX3QmZ2xCNUplX0VfLV4yRmNHL2dicjtxKTdSWV0+KF86UWw4ZVdjbWE4bDtBalc5IWlSUSc+TUVaSSQpODwhREI6QWpRJVxHU3E4ajsyNWhKLkFMUmYwLi0wM2RKY0tmJSVQUzlENSdraDRYVjxmOiVzPHFpJjI/NjdmV2dKMkQuX1EuUFFfJnRjdSg/JWpnOSQ3RTU2SS1IOUFyUiYpPGouaycsUHBUPVU7I0lPXCNgPypmO2BSbz9DUyZ0WU1aVWFrdV4oazdhNThTQUltTCxSVFRJVD4oaUlRbW8oaDtbRnRtTkJZJXJCRmZccCclbyFjNWlMVFc9TzlcI0Bfa1djKj9bVCNBVDwtTHFSOyUtaGhXJCFcOzdYYFU7bjlxbGUmZSRBY2lfIUNKKDxscFxsXTFwcW1PcnBKPTdVWm1GWk9QbVQhcUhAZVZzNF1FVTNuUiZBYWk4LFFcMiVoLGl0LUldZydrNScwXlJuXiZoTCkyXURHXjI8XnEra0Y5USRxSj5lWzRtbVgnamhTZFY8czM9XEkkTXB1UiohbEpCWTAsOG1aXjplRkZtNWI+blxWJFU5WUQoQz0jOE0pQz5DKzgycT0ub21qSVlqbG9BYSJhI0ljcHRiQlgmYHI5JTBBIjY4Sz9vRjUic2kxM2pGN2RSXSohPzY1P0ZiRjJBOFE/NGJJImlYQnNxbFlsbCtrSm9EMVMmWHFvKy1OTWxxZUNQQT8jNEAlJ1UvaTZlbkoxRllFUFlyZl03U1gmVjEoO1FFTU1FaDx1MF1rXmlqNmQ2aCJaUUNdX09QUVM7JG1IKyItWTo2Pm5NTW1yNU9fP0Y6SV1vaERRbXI3cigsZkk/dGMqY0BDSClTS3U7ZVwxayVaKVFxbEYiVHJIXFk5ODMqL04uPW9FP2l1LlVWNDReTll1alZVNm9NUUAkLitXKkc6ZCk4XHBpUnEiQltUdTheSlBpLF5CJHFMXSlablJXaitMRWw9VERxMFk6Y106K1xHajZuPzMoVUk8MlxmR2FzX0JuZmgzSVEyTkg3KyhALV8tJ1pOOEwjNUcjI2g9YGVyTic0cm5XcjM8REthP1QyWmxpO3NPZi5TYSNKaVdERTdETmhJOClnIVhqRmJBaTI4QnRLLTdnVjZIK1BETlJAaVhbMDlkdStmRGAjdTNnLyNNWzw2R1dccCknQk40OyFGQ29CRUpGUVZXWGFtVS1MOCk6LkclUzUvJkpTVitAa2dScD9QK2EjMUdJIVpjSipzPFdqTUwtNWxnPXBVVGBRcV5NJDw1MUE6O1doQ0VNQ3AjPWouLT9wOnFaYW5gVTAoX3NHTTdaOWIrWyxNcDBLIm1DJlxoUFkxSTlJLmlPOTxBQnAnM0haODlzJDpdIihDZk1la0Qpbi1hO2AkaEhyY1FJKjxMJiRXIlolJkFoQWMwUHBxMSFPQSFKWXUwdWZqPUZUYGN0LF51ZWpJLEsxY2Q/dT9pb3EnQ1IrIVwqXGJkcyJhdS83RXU/QExZaSJZal82YWdfXD9CRklGbEdUPklSNE1NS0ZSR2JlX2lEMW9FVDE/aE4hPWxmLyU3JSdbQnEiKFQyJ09wLjBrMjVvOGgzY2ApZ1VHcicpV2wlNzdNai8udXNAXnBhZ0xmVEpdS2NkMSEpUHJvRV82S2tALEFfNV9FUUs2SVpmY01cSVRhLzZDNl4kWFIhS1ZMSFRKbS9OMz5fMjNbOjFdM1ZDa0djaD4qIlw4Q0xpTk8zVi1cT2EnWj9FQ0pNPkJWW1NzIl9CTiRQRHA6LU47VyJXYUVvO11pRl9cN15mWDdmcT1TTyUlN2BkUUBpYWtFYHRMRVZgIVtOcl9nJyQ6M0JiKG4jdTRiUmJGbVA2YXVIK1wrbklUO1EsZDVAQWFvUDYiNXRnaFU2Ky1sOVE+bCREQE9YPTNIZTI5PXNRdXIhLldFYlNEOkQxTj5MdDE5MFtURl9fSTEwOnFfSmYuUGJ1J1orTUNZSSJsVV04Ji5XWkQ0K2Q6Vj4yZVA8Q3FGX1NpPHJORXUwKW4vIzdGXiUsNik8ZzFodS8zcis9Ql8oNz07MjpkX1NeN1g1VSJJRkcmb0w6IWghVGY4YEoicCxyZDhgOE5CRy5SXDVqSi1TUjZwNzwsMTkuIT5TO3I+LlNvdCJoPFQ+Ol87cHJEInUzPkI2LHRPVVwnazw1X2o+Tz1TRkgkYFVmRiokMG8/I2ZeSHJXL0w+K2VtY1UycEJkTkJRPikkOHMiPlxgMDg4KUgwK1pobV9eVm8lKXM1YiMpWEZiKVgoLUwwYColY1ArRUc1MnAuLC9xOkgiUXNvYmVtSHBObHU+I2lQV3RjPjZHWEtOWjxIPz84VGQvKkk4Y1cmU1tzdCMydGYhJGhqW3JaPSIzQSFkSUY/UD1IX0QsUyouWWJJNlcsI0c/KjBNSHRlc01cW2UnYyZaIS0qXnM2Nl5HPGE5Zl5KdCtxX1NTVCg1a0ZBO1JdS3QhS0wrclJsc3M3SUlcY1xbbFA4WGoySyxmQ20oQzxeKykpI2s6Z0tDJlVWJlIjcXUjU2Y/IW10XFxgOz9SPl1DIUczS3IqM1s6RW9PVEQ6VVVpYzBOQioxKSxPU0ZTTTMkSTNsMWhKV2BGOScqS2NxRVlQOSNHbC4kJiJqTFFAOFFKNHMzXzYhNCJUY1BgXmFKS3NgbWFxRydLQ0gjXT8tJ2ZgLjYtQzwjUiNhMDw2ZiE+Yyg1WjY8cTtzaXN0QUpnYkhTbzcxPGpiNSU8JG1aZW9dRjRjND8hcF9gQjVnWUtpXlNDImJVQ1BeR24kIlhdSGVgJClaKCo3bDdxXnFDVS83R10yZGtdYFNuSVxbMz5lal5YNSxyMGdvaSZqIW0iYyJfWDpvZ14udF1mZl5hcWVnYXQtQmYlcSEmWVRmbDJWYC80KzUnL0ElZTh0RCw7Pl1YWCRtcFM6XihpWnBjLlYoTmBfcGcvODpPSlw5XF0sa0FNKUwrJldbdGwlWFotOzYqdG1WdShNP2xpc15KT2RRKThcaChWXzlUNU8/K2IvY1ZNNloqPW5uWmpsMmBPcXRpQGBxU2ZgVSo4QUp0XSxFSXJaMys7X1xlVipGSi1bMCUwMkRHWzFTRy4wTyNBXz1hL0lzTFNOOExsMzlEIUZQW2AmO20kaEYsTi0iaUVBW2kqcjFBSiMpIiM/OUJ1X2g4R1VJJGNFZyVxQFI3Zz1kMTY5PjVPbjlgJG5QI3JHWzw0QTRYRT0tb2smSTRuX29jQUcoQz9DY14rTjdRdWd0J25EaWMpcD0hbj5jISJ1N2x1REMydDRCKyg1T1EwbiNGVjpAWSJ1QmRrYipsOixSKkcyZGFqQ1xQTTwwJU4qT1NvO1BsQ0clQ2RlVCkxaF9aaCx1S2U2NSJuOWpHND1ycDVhJEhzY0NPNVNQcnI4cnAjPCo0TjJTJDRMaHVdVkIhXUdwdWhOJzEtMFEiPTcrUDYwOFMjWi9rdWwiOk82OWBmKE0hVE8+NTdeKENVQmQoakRVT1puX1BOc2hOSjNCP0pNVTxzU14yZWM2R1YoOj1ZNTQjJVhwOGhSR2Z0SUJnTGMwPCcqbi5fLm9MQDNoQFxHUUYsV0phWkBQaD9jN0wsNi4jODF1KWgoP3BVJk4xc1kway8zSjI/TU9ncXNqZGNIQFE6X2tGYT80LUkqcUdwLlhRZDxMXVsvXVFLTnQ2S2wpIjxyZWVsb19VJFRPLl8pcWlkIVxbXWUmXzpIWDtJIihUTiY9ODstam47WmYkJU82M2hyQV9VcCM9MWl1KVNlX00vMmciJmNNZDcwRjEhTTZGY209LUkjKG5iQ0d1RStoQmktPlNxUCtqODgmYWd0cy1kTnVQclVJYTxbUzByW0ZmV2duZD08RWRDaUYhbS0nJSsuR3U+WkNSVDZmSVQnYl1OVyQwVUBnL0kqP0B0RCkrJzJOYS8qX2hyUUYqXEYoOTAxRVE9W2chNjlENlhtQVghX1xNVExWZnBHRyY6bz5MJ24tPFNLSWNNO1JZKXBrMzxqZWVvT3VdI2srdDZVYkI+X1dxZGspPE8mZUNmcyJVRigvJUFgKFBjbzFzOUVOL3UxQUAxSjdtVnRuWEtlVEc7P0FKXWI4YT83R2JAcy9UIVZtXF9KTDpcXklAXGsmNVltOCYiZTQzMkVsLEE6b3A1P3RkSiJubk9WSFFlNzAzNzBwJj03UXBGQVJSbFxDNmRqXUNhTmRFTnBHOTEvalNebWUwPTpKWiVPcVJLKEc0QydJWzd1PiFDLlY1TXFpaTo8dDBPPmJTSlIoQDVTSTJZKjpOKFdgOVAuNVJfVlheKS8kPDtlKi1RRDJgKUhgJVxBaE8iR2E9b15FJE5IR0hQTClAYysnNHUvOSs7WmpQN0wlQl5iJmovTDQlQzpLOCwiLj9BNnFGPGcmSGQnb01ucWs4ZV8mSm08VTlxJjtGZ1cqV3IqV2RcT2A6WU8lXT9TL0Y1azRCUVxgUDRiYSljIjwqY2UvKEQ5PmdoXEgmTD5NKCJoSnFkUlRRUmJLR10wW1lUK2knTltDMTVgMShsR184cmIpO1UhKzlpSCdSM0lcKF86VCJtMCRnI2JLMGBaNzcjRVNWWzBqUTIiJD04NUhoUTVJMlc5QFM4KSVgOEorUnFWXT80VzJubzZMVjpUZ205YzBBOWNDamJzbG4vPEtLbysqVDlMNSQmcmguP3VjI1YlUT9NKkgoKzAvR2tmLCtdTENxVDMkdT0pXl4uIUlZQiksOGxcXkswQlQ7R3NaI2Voa2N0OFJNPUhNczU9PmUpZDQsJD5eKi4oXU40LCkvX1lDSktuIWRgREVHZ25jWThSNFhlYWpgOFA5O2BuXWNIJTNsdVYsIXU5cldfb15IaWw8VU5baG1hNnM1KiFxPzE6cWUtO29MY1hJXllpc24pQUckM1cxbWFkSXBcKksqVS5OPCMoWkBtYVc9P24hLjEoPTgqUD09S05BOD5YcFE+WCg+SEI2MGskKHMoKTBXOEVhTThebEk9aWJDXFYxSXQuVGVdQCgvcGlAJnIvYzpcbWpqJzMhRydLI2dWbGNLVVhqJUM7LShdNTUzcjNnJj87NllidWonTjFpR2NcbU9sVEpKOmVjLFZOR3JhIn4+ZW5kc3RyZWFtCmVuZG9iagp4cmVmCjAgMTUKMDAwMDAwMDAwMCA2NTUzNSBmIAowMDAwMDAwMDYxIDAwMDAwIG4gCjAwMDAwMDAxMTIgMDAwMDAgbiAKMDAwMDAwMDIxOSAwMDAwMCBuIAowMDAwMDAwMzMxIDAwMDAwIG4gCjAwMDAwMDA1MDcgMDAwMDAgbiAKMDAwMDAwMDY4NyAwMDAwMCBuIAowMDAwMDAwODYyIDAwMDAwIG4gCjAwMDAwMDA5NzcgMDAwMDAgbiAKMDAwMDAwMTE2MyAwMDAwMCBuIAowMDAwMDAxMzQ4IDAwMDAwIG4gCjAwMDAwMDE1ODYgMDAwMDAgbiAKMDAwMDAwMTY1NiAwMDAwMCBuIAowMDAwMDAxOTM3IDAwMDAwIG4gCjAwMDAwMDE5OTggMDAwMDAgbiAKdHJhaWxlcgo8PAovSUQgCls8ZjdhMTg4MjI4MmM0MTM1MDgzZGZmYzNkNzEzZDA0M2Y+PGY3YTE4ODIyODJjNDEzNTA4M2RmZmMzZDcxM2QwNDNmPl0KJSBSZXBvcnRMYWIgZ2VuZXJhdGVkIFBERiBkb2N1bWVudCAtLSBkaWdlc3QgKG9wZW5zb3VyY2UpCgovSW5mbyAxMiAwIFIKL1Jvb3QgMTEgMCBSCi9TaXplIDE1Cj4+CnN0YXJ0eHJlZgo2MTE2CiUlRU9GCg==" download="Sri_Chandan_Vura_Resume.pdf" class="btn btn-primary button-md">
-              <!-- Phosphor Icon: FileArrowDown -->
               <svg width="18" height="18" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M213.66,82.34l-56-56A8,8,0,0,0,152,24H56A16,16,0,0,0,40,40V216a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V88A8,8,0,0,0,213.66,82.34ZM152,44l44,44H152ZM200,216H56V40h80V96a8,8,0,0,0,8,8h56V216Zm-42.34-66.34a8,8,0,0,1,0,11.31l-24,24a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.31L120,160.69V128a8,8,0,0,1,16,0v32.69l10.34-10.34A8,8,0,0,1,157.66,149.66Z"></path></svg>
               Download ATS resume
             </a>
             <button type="button" class="btn btn-secondary button-md" id="copyEmailBtn" data-email="srichandanvura@gmail.com">
-              <!-- Phosphor Icon: Copy -->
               <svg width="18" height="18" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M216,32H88a8,8,0,0,0-8,8V80H40a8,8,0,0,0-8,8V216a8,8,0,0,0,8,8H168a8,8,0,0,0,8-8V176h40a8,8,0,0,0,8-8V40A8,8,0,0,0,216,32ZM160,208H48V96H160Zm48-48H176V88a8,8,0,0,0-8-8H96V48H208Z"></path></svg>
               Copy email address
             </button>
             <a href="https://linkedin.com/in/chandanvura" target="_blank" rel="noopener noreferrer" class="btn btn-ghost button-md">
-              <!-- Phosphor Icon: LinkedinLogo -->
               <svg width="18" height="18" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24ZM96,208H64V104H96Zm-16-120a16,16,0,1,1,16-16A16,16,0,0,1,80,88ZM208,208H176V152c0-13.25-10.75-24-24-24s-24,10.75-24,24v56H96V104h32v14.47a39.88,39.88,0,0,1,32-15.47c22.09,0,40,17.91,40,40Z"></path></svg>
               LinkedIn
             </a>
             <a href="https://github.com/chandanvura" target="_blank" rel="noopener noreferrer" class="btn btn-ghost button-md">
-              <!-- Phosphor Icon: GithubLogo -->
               <svg width="18" height="18" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M208.3,127.16a16.07,16.07,0,0,0-1.74-7.55,67.6,67.6,0,0,0-3-11.75c-.41-1.07-2.31-5.78-8.23-8.81A46.7,46.7,0,0,0,178.6,97c-1.39-.77-2.83-1.46-4.32-2.07A84,84,0,0,0,128,88a84,84,0,0,0-46.28,7c-1.49.61-2.93,1.3-4.32,2.07a46.7,46.7,0,0,0-16.73,2.05c-5.92,3-7.82,7.74-8.23,8.81a67.6,67.6,0,0,0-3,11.75,16.07,16.07,0,0,0-1.74,7.55A80.59,80.59,0,0,0,50,154.55c4.78,35.48,31.42,54.75,69.54,58.35a8,8,0,0,0,4.89-1.57l3.57-2.7V224a8,8,0,0,0,16,0V208.63l3.57,2.7a8,8,0,0,0,4.89,1.57c38.12-3.6,64.76-22.87,69.54-58.35A80.59,80.59,0,0,0,208.3,127.16ZM128,198c-32.34,0-54.89-14.77-58.62-42.38a64.39,64.39,0,0,1,2.08-25.75,8,8,0,0,0-3-8.79c-2.39-1.8-3.67-4.75-3.87-7.46,3.67-1.12,12.38-.8,22,5.55a8,8,0,0,0,8.27.42A68.32,68.32,0,0,1,128,104a68.32,68.32,0,0,1,33.14,15.59,8,8,0,0,0,8.27-.42c9.62-6.35,18.33-6.67,22-5.55-.2,2.71-1.48,5.66-3.87,7.46a8,8,0,0,0-3,8.79,64.39,64.39,0,0,1,2.08,25.75C182.89,183.23,160.34,198,128,198Z"></path></svg>
               GitHub
             </a>
@@ -1171,6 +1213,51 @@
       </div>
     </section>
 
+    <!-- RECRUITER LENS & ROLE SWITCHER SECTION -->
+    <section class="lens-section shell" id="lens" aria-labelledby="lens-heading">
+      <div class="section-header">
+        <span class="section-tag">Role Targeting</span>
+        <h2 class="heading-2" id="lens-heading">What are you hiring for?</h2>
+        <p class="body-3" style="max-width: 600px; margin-top: var(--spacing-75);">
+          Select your engineering focus to inspect tailored evidence, benchmarks, and production relevance.
+        </p>
+      </div>
+
+      <div class="lens-switcher" role="tablist">
+        <button type="button" class="lens-tab active" data-lens="backend" role="tab" aria-selected="true">Java Backend Engineer</button>
+        <button type="button" class="lens-tab" data-lens="platform" role="tab" aria-selected="false">Platform &amp; DevOps</button>
+        <button type="button" class="lens-tab" data-lens="sre" role="tab" aria-selected="false">Reliability &amp; SRE</button>
+      </div>
+
+      <div class="lens-card" id="lensContent">
+        <div>
+          <span class="title-5" id="lensTag" style="color: var(--accent); text-transform: uppercase; font-family: var(--font-mono);">BACKEND ARCHITECTURE</span>
+          <h3 class="heading-4" id="lensTitle" style="margin-top: var(--spacing-75); margin-bottom: var(--spacing-100);">High throughput Java 21 systems</h3>
+          <p class="body-6" id="lensDesc" style="margin-bottom: var(--spacing-200);">
+            Specialized in high performance Java services, transactional integrity, and database optimization. Experienced modernizing legacy Java 8 codebases to modern Java 21 and Spring Boot 3 standards at scale.
+          </p>
+          <div class="tech-pill-group" id="lensSkills">
+            <span class="tech-pill">Java 21</span>
+            <span class="tech-pill">Spring Boot 3</span>
+            <span class="tech-pill">PostgreSQL 17</span>
+            <span class="tech-pill">Hibernate</span>
+            <span class="tech-pill">Flyway</span>
+            <span class="tech-pill">REST APIs</span>
+          </div>
+        </div>
+
+        <div class="card-nested-box">
+          <span class="caption-4" style="color: var(--accent); font-family: var(--font-mono);">KEY PRODUCTION EVIDENCE</span>
+          <p class="body-5" id="lensProof" style="margin-top: var(--spacing-50); color: var(--text-main);">
+            Migrated 10+ core production microservices at Sony India Software Centre to Java 21, resolving namespace conflicts and optimizing garbage collection memory latency.
+          </p>
+          <div style="margin-top: var(--spacing-200);">
+            <a href="#work" class="btn btn-secondary button-xsm">Inspect PayGuard architecture</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- B11 Mandatory Tagline Reveal Section -->
     <section class="tagline-section shell" aria-label="Core Philosophy">
       <div class="tagline-container">
@@ -1187,7 +1274,7 @@
         <span class="section-tag">Featured Implementation</span>
         <h2 class="heading-2" id="work-heading">Proof, not empty claims</h2>
         <p class="body-3" style="max-width: 600px; margin-top: var(--spacing-75);">
-          Real backend architectures with reproducible codebases and verified resilience mechanisms.
+          Real backend architectures with reproducible codebases, verified metrics, and failure recovery.
         </p>
       </div>
 
@@ -1211,6 +1298,18 @@
             <span class="tech-pill">Docker</span>
             <span class="tech-pill">Kubernetes</span>
             <span class="tech-pill">Prometheus</span>
+          </div>
+
+          <!-- Benchmark Metrics Box for Tech Leads -->
+          <div class="benchmark-grid">
+            <div class="benchmark-card">
+              <span class="benchmark-metric">0.00%</span>
+              <span class="benchmark-label">Double charge rate across 10k retries</span>
+            </div>
+            <div class="benchmark-card">
+              <span class="benchmark-metric">&lt; 45ms</span>
+              <span class="benchmark-label">P99 response time with Redis caching</span>
+            </div>
           </div>
 
           <div style="display: flex; gap: var(--spacing-100); margin-top: var(--spacing-300);">
@@ -1479,9 +1578,12 @@
               Download ATS resume
             </a>
             <a href="mailto:srichandanvura@gmail.com" class="btn btn-secondary button-md">
-              <!-- Phosphor Icon: Envelope -->
               <svg width="18" height="18" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48ZM208,64,128,124,48,64ZM216,192H40V74.67l83.56,62.67a8,8,0,0,0,9.6,0L216,74.67V192Z"></path></svg>
               Send an email
+            </a>
+            <a href="https://linkedin.com/in/chandanvura" target="_blank" rel="noopener noreferrer" class="btn btn-secondary button-md">
+              <svg width="18" height="18" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24ZM96,208H64V104H96Zm-16-120a16,16,0,1,1,16-16A16,16,0,0,1,80,88ZM208,208H176V152c0-13.25-10.75-24-24-24s-24,10.75-24,24v56H96V104h32v14.47a39.88,39.88,0,0,1,32-15.47c22.09,0,40,17.91,40,40Z"></path></svg>
+              LinkedIn message
             </a>
           </div>
         </div>
@@ -1614,6 +1716,8 @@
             window.location.href = "data:application/pdf;base64,JVBERi0xLjQKJZOMi54gUmVwb3J0TGFiIEdlbmVyYXRlZCBQREYgZG9jdW1lbnQgKG9wZW5zb3VyY2UpCjEgMCBvYmoKPDwKL0YxIDIgMCBSIC9GMiAzIDAgUiAvRjMgNyAwIFIKPj4KZW5kb2JqCjIgMCBvYmoKPDwKL0Jhc2VGb250IC9IZWx2ZXRpY2EgL0VuY29kaW5nIC9XaW5BbnNpRW5jb2RpbmcgL05hbWUgL0YxIC9TdWJ0eXBlIC9UeXBlMSAvVHlwZSAvRm9udAo+PgplbmRvYmoKMyAwIG9iago8PAovQmFzZUZvbnQgL0hlbHZldGljYS1Cb2xkIC9FbmNvZGluZyAvV2luQW5zaUVuY29kaW5nIC9OYW1lIC9GMiAvU3VidHlwZSAvVHlwZTEgL1R5cGUgL0ZvbnQKPj4KZW5kb2JqCjQgMCBvYmoKPDwKL0EgPDwKL1MgL1VSSSAvVHlwZSAvQWN0aW9uIC9VUkkgKG1haWx0bzpzcmljaGFuZGFudnVyYUBnbWFpbC5jb20pCj4+IC9Cb3JkZXIgWyAwIDAgMCBdIC9SZWN0IFsgMjIzLjI2OTMgNzM3LjY0IDMyMC4wNDM5IDc0NyBdIC9TdWJ0eXBlIC9MaW5rIC9UeXBlIC9Bbm5vdAo+PgplbmRvYmoKNSAwIG9iago8PAovQSA8PAovUyAvVVJJIC9UeXBlIC9BY3Rpb24gL1VSSSAoaHR0cHM6Ly9saW5rZWRpbi5jb20vaW4vY2hhbmRhbnZ1cmEpCj4+IC9Cb3JkZXIgWyAwIDAgMCBdIC9SZWN0IFsgMzMxLjQ0NzUgNzM3LjY0IDQzMC4yODkxIDc0NyBdIC9TdWJ0eXBlIC9MaW5rIC9UeXBlIC9Bbm5vdAo+PgplbmRvYmoKNiAwIG9iago8PAovQSA8PAovUyAvVVJJIC9UeXBlIC9BY3Rpb24gL1VSSSAoaHR0cHM6Ly9naXRodWIuY29tL2NoYW5kYW52dXJhKQo+PiAvQm9yZGVyIFsgMCAwIDAgXSAvUmVjdCBbIDQ0MS42OTI3IDczNy42NCA1MjcuMTAyNyA3NDcgXSAvU3VidHlwZSAvTGluayAvVHlwZSAvQW5ub3QKPj4KZW5kb2JqCjcgMCBvYmoKPDwKL0Jhc2VGb250IC9IZWx2ZXRpY2EtT2JsaXF1ZSAvRW5jb2RpbmcgL1dpbkFuc2lFbmNvZGluZyAvTmFtZSAvRjMgL1N1YnR5cGUgL1R5cGUxIC9UeXBlIC9Gb250Cj4+CmVuZG9iago4IDAgb2JqCjw8Ci9BIDw8Ci9TIC9VUkkgL1R5cGUgL0FjdGlvbiAvVVJJIChodHRwczovL2dpdGh1Yi5jb20vY2hhbmRhbnZ1cmEvUGF5R3VhcmQpCj4+IC9Cb3JkZXIgWyAwIDAgMCBdIC9SZWN0IFsgMzA1LjQyMDggMzUyLjk2IDQ0My45NDM0IDM2Mi44IF0gL1N1YnR5cGUgL0xpbmsgL1R5cGUgL0Fubm90Cj4+CmVuZG9iago5IDAgb2JqCjw8Ci9BIDw8Ci9TIC9VUkkgL1R5cGUgL0FjdGlvbiAvVVJJIChodHRwczovL2NoYW5kYW52dXJhLmdpdGh1Yi5pby9QYXlHdWFyZC8pCj4+IC9Cb3JkZXIgWyAwIDAgMCBdIC9SZWN0IFsgNDUwLjc5ODYgMzUyLjk2IDQ5Mi4yNjYgMzYyLjggXSAvU3VidHlwZSAvTGluayAvVHlwZSAvQW5ub3QKPj4KZW5kb2JqCjEwIDAgb2JqCjw8Ci9Bbm5vdHMgWyA0IDAgUiA1IDAgUiA2IDAgUiA4IDAgUiA5IDAgUiBdIC9Db250ZW50cyAxNCAwIFIgL01lZGlhQm94IFsgMCAwIDYxMiA3OTIgXSAvUGFyZW50IDEzIDAgUiAvUmVzb3VyY2VzIDw8Ci9Gb250IDEgMCBSIC9Qcm9jU2V0IFsgL1BERiAvVGV4dCAvSW1hZ2VCIC9JbWFnZUMgL0ltYWdlSSBdCj4+IC9Sb3RhdGUgMCAKICAvVHJhbnMgPDwKCj4+IC9UeXBlIC9QYWdlCj4+CmVuZG9iagoxMSAwIG9iago8PAovUGFnZU1vZGUgL1VzZU5vbmUgL1BhZ2VzIDEzIDAgUiAvVHlwZSAvQ2F0YWxvZwo+PgplbmRvYmoKMTIgMCBvYmoKPDwKL0F1dGhvciAoXChhbm9ueW1vdXNcKSkgL0NyZWF0aW9uRGF0ZSAoRDoyMDI2MTExMTAxMjA1MyswNScwMCcpIC9DcmVhdG9yIChcKHVuc3BlY2lmaWVkXCkpIC9LZXl3b3JkcyAoKSAvTW9kRGF0ZSAoRDoyMDI2MTExMTAxMjA1MyswNScwMCcpIC9Qcm9kdWNlciAoUmVwb3J0TGFiIFBERiBMaWJyYXJ5IC0gXChvcGVuc291cmNlXCkpIAogIC9TdWJqZWN0IChcKHVuc3BlY2lmaWVkXCkpIC9UaXRsZSAoXChhbm9ueW1vdXNcKSkgL1RyYXBwZWQgL0ZhbHNlCj4+CmVuZG9iagoxMyAwIG9iago8PAovQ291bnQgMSAvS2lkcyBbIDEwIDAgUiBdIC9UeXBlIC9QYWdlcwo+PgplbmRvYmoKMTQgMCBvYmoKPDwKL0ZpbHRlciBbIC9BU0NJSTg1RGVjb2RlIC9GbGF0ZURlY29kZSBdIC9MZW5ndGggNDAyNgo+PgpzdHJlYW0KR2IhU25nTk06QyZxLyktZUMuUkclKXJQcjAkMjpFTiszaTdMYG5jN0NcYWZoKUdpITczXEFHYFpoIVhtWCokLzpNVSJmUVBEO2BcMSpIRW9dNkA/RFdsQ2JLcmBlTmddLTA1LGUnWS1gPGgmNUVaOSQ1P2JxRWBtSiteaTQuclQuMldSaSNcMHFMNyw6Oz5dUzpwVyNtPWJBPWFYX3QmZ2xCNUplX0VfLV4yRmNHL2dicjtxKTdSWV0+KF86UWw4ZVdjbWE4bDtBalc5IWlSUSc+TUVaSSQpODwhREI6QWpRJVxHU3E4ajsyNWhKLkFMUmYwLi0wM2RKY0tmJSVQUzlENSdraDRYVjxmOiVzPHFpJjI/NjdmV2dKMkQuX1EuUFFfJnRjdSg/JWpnOSQ3RTU2SS1IOUFyUiYpPGouaycsUHBUPVU7I0lPXCNgPypmO2BSbz9DUyZ0WU1aVWFrdV4oazdhNThTQUltTCxSVFRJVD4oaUlRbW8oaDtbRnRtTkJZJXJCRmZccCclbyFjNWlMVFc9TzlcI0Bfa1djKj9bVCNBVDwtTHFSOyUtaGhXJCFcOzdYYFU7bjlxbGUmZSRBY2lfIUNKKDxscFxsXTFwcW1PcnBKPTdVWm1GWk9QbVQhcUhAZVZzNF1FVTNuUiZBYWk4LFFcMiVoLGl0LUldZydrNScwXlJuXiZoTCkyXURHXjI8XnEra0Y5USRxSj5lWzRtbVgnamhTZFY8czM9XEkkTXB1UiohbEpCWTAsOG1aXjplRkZtNWI+blxWJFU5WUQoQz0jOE0pQz5DKzgycT0ub21qSVlqbG9BYSJhI0ljcHRiQlgmYHI5JTBBIjY4Sz9vRjUic2kxM2pGN2RSXSohPzY1P0ZiRjJBOFE/NGJJImlYQnNxbFlsbCtrSm9EMVMmWHFvKy1OTWxxZUNQQT8jNEAlJ1UvaTZlbkoxRllFUFlyZl03U1gmVjEoO1FFTU1FaDx1MF1rXmlqNmQ2aCJaUUNdX09QUVM7JG1IKyItWTo2Pm5NTW1yNU9fP0Y6SV1vaERRbXI3cigsZkk/dGMqY0BDSClTS3U7ZVwxayVaKVFxbEYiVHJIXFk5ODMqL04uPW9FP2l1LlVWNDReTll1alZVNm9NUUAkLitXKkc6ZCk4XHBpUnEiQltUdTheSlBpLF5CJHFMXSlablJXaitMRWw9VERxMFk6Y106K1xHajZuPzMoVUk8MlxmR2FzX0JuZmgzSVEyTkg3KyhALV8tJ1pOOEwjNUcjI2g9YGVyTic0cm5XcjM8REthP1QyWmxpO3NPZi5TYSNKaVdERTdETmhJOClnIVhqRmJBaTI4QnRLLTdnVjZIK1BETlJAaVhbMDlkdStmRGAjdTNnLyNNWzw2R1dccCknQk40OyFGQ29CRUpGUVZXWGFtVS1MOCk6LkclUzUvJkpTVitAa2dScD9QK2EjMUdJIVpjSipzPFdqTUwtNWxnPXBVVGBRcV5NJDw1MUE6O1doQ0VNQ3AjPWouLT9wOnFaYW5gVTAoX3NHTTdaOWIrWyxNcDBLIm1DJlxoUFkxSTlJLmlPOTxBQnAnM0haODlzJDpdIihDZk1la0Qpbi1hO2AkaEhyY1FJKjxMJiRXIlolJkFoQWMwUHBxMSFPQSFKWXUwdWZqPUZUYGN0LF51ZWpJLEsxY2Q/dT9pb3EnQ1IrIVwqXGJkcyJhdS83RXU/QExZaSJZal82YWdfXD9CRklGbEdUPklSNE1NS0ZSR2JlX2lEMW9FVDE/aE4hPWxmLyU3JSdbQnEiKFQyJ09wLjBrMjVvOGgzY2ApZ1VHcicpV2wlNzdNai8udXNAXnBhZ0xmVEpdS2NkMSEpUHJvRV82S2tALEFfNV9FUUs2SVpmY01cSVRhLzZDNl4kWFIhS1ZMSFRKbS9OMz5fMjNbOjFdM1ZDa0djaD4qIlw4Q0xpTk8zVi1cT2EnWj9FQ0pNPkJWW1NzIl9CTiRQRHA6LU47VyJXYUVvO11pRl9cN15mWDdmcT1TTyUlN2BkUUBpYWtFYHRMRVZgIVtOcl9nJyQ6M0JiKG4jdTRiUmJGbVA2YXVIK1wrbklUO1EsZDVAQWFvUDYiNXRnaFU2Ky1sOVE+bCREQE9YPTNIZTI5PXNRdXIhLldFYlNEOkQxTj5MdDE5MFtURl9fSTEwOnFfSmYuUGJ1J1orTUNZSSJsVV04Ji5XWkQ0K2Q6Vj4yZVA8Q3FGX1NpPHJORXUwKW4vIzdGXiUsNik8ZzFodS8zcis9Ql8oNz07MjpkX1NeN1g1VSJJRkcmb0w6IWghVGY4YEoicCxyZDhgOE5CRy5SXDVqSi1TUjZwNzwsMTkuIT5TO3I+LlNvdCJoPFQ+Ol87cHJEInUzPkI2LHRPVVwnazw1X2o+Tz1TRkgkYFVmRiokMG8/I2ZeSHJXL0w+K2VtY1UycEJkTkJRPikkOHMiPlxgMDg4KUgwK1pobV9eVm8lKXM1YiMpWEZiKVgoLUwwYColY1ArRUc1MnAuLC9xOkgiUXNvYmVtSHBObHU+I2lQV3RjPjZHWEtOWjxIPz84VGQvKkk4Y1cmU1tzdCMydGYhJGhqW3JaPSIzQSFkSUY/UD1IX0QsUyouWWJJNlcsI0c/KjBNSHRlc01cW2UnYyZaIS0qXnM2Nl5HPGE5Zl5KdCtxX1NTVCg1a0ZBO1JdS3QhS0wrclJsc3M3SUlcY1xbbFA4WGoySyxmQ20oQzxeKykpI2s6Z0tDJlVWJlIjcXUjU2Y/IW10XFxgOz9SPl1DIUczS3IqM1s6RW9PVEQ6VVVpYzBOQioxKSxPU0ZTTTMkSTNsMWhKV2BGOScqS2NxRVlQOSNHbC4kJiJqTFFAOFFKNHMzXzYhNCJUY1BgXmFKS3NgbWFxRydLQ0gjXT8tJ2ZgLjYtQzwjUiNhMDw2ZiE+Yyg1WjY8cTtzaXN0QUpnYkhTbzcxPGpiNSU8JG1aZW9dRjRjND8hcF9gQjVnWUtpXlNDImJVQ1BeR24kIlhdSGVgJClaKCo3bDdxXnFDVS83R10yZGtdYFNuSVxbMz5lal5YNSxyMGdvaSZqIW0iYyJfWDpvZ14udF1mZl5hcWVnYXQtQmYlcSEmWVRmbDJWYC80KzUnL0ElZTh0RCw7Pl1YWCRtcFM6XihpWnBjLlYoTmBfcGcvODpPSlw5XF0sa0FNKUwrJldbdGwlWFotOzYqdG1WdShNP2xpc15KT2RRKThcaChWXzlUNU8/K2IvY1ZNNloqPW5uWmpsMmBPcXRpQGBxU2ZgVSo4QUp0XSxFSXJaMys7X1xlVipGSi1bMCUwMkRHWzFTRy4wTyNBXz1hL0lzTFNOOExsMzlEIUZQW2AmO20kaEYsTi0iaUVBW2kqcjFBSiMpIiM/OUJ1X2g4R1VJJGNFZyVxQFI3Zz1kMTY5PjVPbjlgJG5QI3JHWzw0QTRYRT0tb2smSTRuX29jQUcoQz9DY14rTjdRdWd0J25EaWMpcD0hbj5jISJ1N2x1REMydDRCKyg1T1EwbiNGVjpAWSJ1QmRrYipsOixSKkcyZGFqQ1xQTTwwJU4qT1NvO1BsQ0clQ2RlVCkxaF9aaCx1S2U2NSJuOWpHND1ycDVhJEhzY0NPNVNQcnI4cnAjPCo0TjJTJDRMaHVdVkIhXUdwdWhOJzEtMFEiPTcrUDYwOFMjWi9rdWwiOk82OWBmKE0hVE8+NTdeKENVQmQoakRVT1puX1BOc2hOSjNCP0pNVTxzU14yZWM2R1YoOj1ZNTQjJVhwOGhSR2Z0SUJnTGMwPCcqbi5fLm9MQDNoQFxHUUYsV0phWkBQaD9jN0wsNi4jODF1KWgoP3BVJk4xc1kway8zSjI/TU9ncXNqZGNIQFE6X2tGYT80LUkqcUdwLlhRZDxMXVsvXVFLTnQ2S2wpIjxyZWVsb19VJFRPLl8pcWlkIVxbXWUmXzpIWDtJIihUTiY9ODstam47WmYkJU82M2hyQV9VcCM9MWl1KVNlX00vMmciJmNNZDcwRjEhTTZGY209LUkjKG5iQ0d1RStoQmktPlNxUCtqODgmYWd0cy1kTnVQclVJYTxbUzByW0ZmV2duZD08RWRDaUYhbS0nJSsuR3U+WkNSVDZmSVQnYl1OVyQwVUBnL0kqP0B0RCkrJzJOYS8qX2hyUUYqXEYoOTAxRVE9W2chNjlENlhtQVghX1xNVExWZnBHRyY6bz5MJ24tPFNLSWNNO1JZKXBrMzxqZWVvT3VdI2srdDZVYkI+X1dxZGspPE8mZUNmcyJVRigvJUFgKFBjbzFzOUVOL3UxQUAxSjdtVnRuWEtlVEc7P0FKXWI4YT83R2JAcy9UIVZtXF9KTDpcXklAXGsmNVltOCYiZTQzMkVsLEE6b3A1P3RkSiJubk9WSFFlNzAzNzBwJj03UXBGQVJSbFxDNmRqXUNhTmRFTnBHOTEvalNebWUwPTpKWiVPcVJLKEc0QydJWzd1PiFDLlY1TXFpaTo8dDBPPmJTSlIoQDVTSTJZKjpOKFdgOVAuNVJfVlheKS8kPDtlKi1RRDJgKUhgJVxBaE8iR2E9b15FJE5IR0hQTClAYysnNHUvOSs7WmpQN0wlQl5iJmovTDQlQzpLOCwiLj9BNnFGPGcmSGQnb01ucWs4ZV8mSm08VTlxJjtGZ1cqV3IqV2RcT2A6WU8lXT9TL0Y1azRCUVxgUDRiYSljIjwqY2UvKEQ5PmdoXEgmTD5NKCJoSnFkUlRRUmJLR10wW1lUK2knTltDMTVgMShsR184cmIpO1UhKzlpSCdSM0lcKF86VCJtMCRnI2JLMGBaNzcjRVNWWzBqUTIiJD04NUhoUTVJMlc5QFM4KSVgOEorUnFWXT80VzJubzZMVjpUZ205YzBBOWNDamJzbG4vPEtLbysqVDlMNSQmcmguP3VjI1YlUT9NKkgoKzAvR2tmLCtdTENxVDMkdT0pXl4uIUlZQiksOGxcXkswQlQ7R3NaI2Voa2N0OFJNPUhNczU9PmUpZDQsJD5eKi4oXU40LCkvX1lDSktuIWRgREVHZ25jWThSNFhlYWpgOFA5O2BuXWNIJTNsdVYsIXU5cldfb15IaWw8VU5baG1hNnM1KiFxPzE6cWUtO29MY1hJXllpc24pQUckM1cxbWFkSXBcKksqVS5OPCMoWkBtYVc9P24hLjEoPTgqUD09S05BOD5YcFE+WCg+SEI2MGskKHMoKTBXOEVhTThebEk9aWJDXFYxSXQuVGVdQCgvcGlAJnIvYzpcbWpqJzMhRydLI2dWbGNLVVhqJUM7LShdNTUzcjNnJj87NllidWonTjFpR2NcbU9sVEpKOmVjLFZOR3JhIn4+ZW5kc3RyZWFtCmVuZG9iagp4cmVmCjAgMTUKMDAwMDAwMDAwMCA2NTUzNSBmIAowMDAwMDAwMDYxIDAwMDAwIG4gCjAwMDAwMDAxMTIgMDAwMDAgbiAKMDAwMDAwMDIxOSAwMDAwMCBuIAowMDAwMDAwMzMxIDAwMDAwIG4gCjAwMDAwMDA1MDcgMDAwMDAgbiAKMDAwMDAwMDY4NyAwMDAwMCBuIAowMDAwMDAwODYyIDAwMDAwIG4gCjAwMDAwMDA5NzcgMDAwMDAgbiAKMDAwMDAwMTE2MyAwMDAwMCBuIAowMDAwMDAxMzQ4IDAwMDAwIG4gCjAwMDAwMDE1ODYgMDAwMDAgbiAKMDAwMDAwMTY1NiAwMDAwMCBuIAowMDAwMDAxOTM3IDAwMDAwIG4gCjAwMDAwMDE5OTggMDAwMDAgbiAKdHJhaWxlcgo8PAovSUQgCls8ZjdhMTg4MjI4MmM0MTM1MDgzZGZmYzNkNzEzZDA0M2Y+PGY3YTE4ODIyODJjNDEzNTA4M2RmZmMzZDcxM2QwNDNmPl0KJSBSZXBvcnRMYWIgZ2VuZXJhdGVkIFBERiBkb2N1bWVudCAtLSBkaWdlc3QgKG9wZW5zb3VyY2UpCgovSW5mbyAxMiAwIFIKL1Jvb3QgMTEgMCBSCi9TaXplIDE1Cj4+CnN0YXJ0eHJlZgo2MTE2CiUlRU9GCg==";
           } else if (action === 'email') {
             if (copyEmailBtn) copyEmailBtn.click();
+          } else if (action === 'linkedin') {
+            window.open('https://linkedin.com/in/chandanvura', '_blank');
           } else if (action) {
             const target = document.getElementById(action);
             if (target) target.scrollIntoView({ behavior: 'smooth' });
@@ -1622,7 +1726,6 @@
       });
     }
 
-    // Filter Palette Items
     if (paletteInput && paletteList) {
       paletteInput.addEventListener('input', () => {
         const query = paletteInput.value.toLowerCase();
@@ -1633,7 +1736,60 @@
       });
     }
 
-    // 4. B11 Tagline Word by Word Scroll Reveal
+    // 4. Recruiter Lens Tab Switcher
+    const lensTabs = document.querySelectorAll('.lens-tab');
+    const lensTag = document.getElementById('lensTag');
+    const lensTitle = document.getElementById('lensTitle');
+    const lensDesc = document.getElementById('lensDesc');
+    const lensProof = document.getElementById('lensProof');
+    const lensSkills = document.getElementById('lensSkills');
+
+    const lensData = {
+      backend: {
+        tag: "BACKEND ARCHITECTURE",
+        title: "High throughput Java 21 systems",
+        desc: "Specialized in high performance Java services, transactional integrity, and database optimization. Experienced modernizing legacy Java 8 codebases to modern Java 21 and Spring Boot 3 standards at scale.",
+        proof: "Migrated 10+ core production microservices at Sony India Software Centre to Java 21, resolving namespace conflicts and optimizing garbage collection memory latency.",
+        skills: ["Java 21", "Spring Boot 3", "PostgreSQL 17", "Hibernate", "Flyway", "REST APIs"]
+      },
+      platform: {
+        tag: "PLATFORM & CLOUD",
+        title: "Cluster deployments and release pipelines",
+        desc: "Automating the delivery pipeline from git commit to live cluster with guardrails. Hands on experience with AWS EKS, automated Jenkins pipelines, Docker packaging, and image registries.",
+        proof: "Migrated build pipelines to Core Jenkins for Java 21 compliance and automated container packaging to AWS ECR with zero downtime delivery gates.",
+        skills: ["AWS EKS", "Docker", "Kubernetes", "Jenkins", "Helm", "Terraform", "GitHub Actions"]
+      },
+      sre: {
+        tag: "RELIABILITY & OBSERVABILITY",
+        title: "Monitoring, telemetry, and fault recovery",
+        desc: "Designing resilient systems that gracefully handle network failure, webhook timeouts, and database latency. Experienced configuring alerts and observing telemetry.",
+        proof: "Monitored microservices on AWS EKS using Skuba, Prometheus, and Grafana. Architected PayGuard with automated background reconciliation for dropped network calls.",
+        skills: ["Prometheus", "Grafana", "Loki", "Micrometer", "Skuba", "JUnit 5", "SCANOSS"]
+      }
+    };
+
+    lensTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        lensTabs.forEach(t => {
+          t.classList.remove('active');
+          t.setAttribute('aria-selected', 'false');
+        });
+        tab.classList.add('active');
+        tab.setAttribute('aria-selected', 'true');
+
+        const key = tab.getAttribute('data-lens');
+        const data = lensData[key];
+        if (data) {
+          lensTag.innerText = data.tag;
+          lensTitle.innerText = data.title;
+          lensDesc.innerText = data.desc;
+          lensProof.innerText = data.proof;
+          lensSkills.innerHTML = data.skills.map(s => `<span class="tech-pill">${s}</span>`).join('');
+        }
+      });
+    });
+
+    // 5. B11 Tagline Word by Word Scroll Reveal
     const revealTextElem = document.getElementById('revealText');
     if (revealTextElem) {
       const text = revealTextElem.innerText.trim();
@@ -1676,7 +1832,7 @@
       }
     }
 
-    // 5. Interactive 3D Architecture Canvas Simulation
+    // 6. Interactive 3D Architecture Canvas Simulation
     const canvas = document.getElementById('archCanvas');
     if (canvas && canvas.getContext) {
       const ctx = canvas.getContext('2d');
@@ -1724,7 +1880,6 @@
           toIso(x - hs, y + hs, z + size)
         ];
 
-        // Top face
         ctx.fillStyle = color;
         ctx.beginPath();
         ctx.moveTo(corners[4].x, corners[4].y);
@@ -1736,7 +1891,6 @@
         ctx.strokeStyle = '#313131';
         ctx.stroke();
 
-        // Left face
         ctx.fillStyle = 'rgba(0,0,0,0.45)';
         ctx.beginPath();
         ctx.moveTo(corners[0].x, corners[0].y);
@@ -1747,7 +1901,6 @@
         ctx.fill();
         ctx.stroke();
 
-        // Right face
         ctx.fillStyle = 'rgba(0,0,0,0.25)';
         ctx.beginPath();
         ctx.moveTo(corners[3].x, corners[3].y);
